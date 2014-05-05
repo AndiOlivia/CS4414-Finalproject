@@ -1,4 +1,4 @@
-CS4414-Finalproject
+Personal Expense Management System
 ===================
 Before executing the program, first, user needs to execute mysql statements in homeManager.sql under db folder. The team used MySQL as the database management system. 
 
