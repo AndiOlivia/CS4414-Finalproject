@@ -1,19 +1,18 @@
 Personal Expense Management System
 ===================
-Before executing the program, first, user needs to execute mysql statements in homeManager.sql under db folder. The team used MySQL as the database management system. 
+Before executing this program, the user needs to set up the database by executing mysql statements in homeManager.sql under db folder. Our team used MySQL as the database management system. A complete list of program parameters can be found in file: mvc.ini. 
 
-Program entrance is located at src/com/jida/clinet/main/ProgramEntrance
+Program entrance is located at src/com/jida/clinet/main/ProgramEntrance.
 
-The complete list of program parameters can be found in file: mvc.ini
+A csv file with name "Expenses.csv" will be generated everytime a user has succesfully logged in, it will contain the list of products and all the past purchase records for that particular user. 
 
-A csv file with name "Expenses.csv" will be generated everytime a user is succesfully logged in, it will contain the list of products and all the past purchase records for that particular user. 
-
-Here is an example of how you can use this system:
+Below we provide some instructions on using this system:
 
 1. Use the program entrance located at src/com/jida/clinet/main/ProgramEntrance
-2. Use the following user account to login: 
-      username: Huiqing; 
-      password: 0000
-3. Click on the product button on the left right corner and then you will see a drop down menu, click on product and you will see a list of all the products and their corresponding categories. If you want to add an item, you can enter the product information and then click Insert. (Please make sure that the product number is not a duplicate of the number of any existing products.) You can delete and update the products in the same manner. 
-4. If you want to enter purchase records, click on the Home Manager button and then click on Fee Manager in the drop down menu. Then you will see a list of all the purchase records that belong to your account. If you do not have any yet, enter the purchase information and click on Insert, the record will be added and you will be able to see the update in the list. You can delete and update the products in the same manner. 
-5. Finally you can exit the system either by clicking on the red cross on the right upper corder or click on Product and then select exit from there. You will need to enter your username and password again to logout safely. 
+2. Use the following user account to login:   
+      username: Andi  
+      password: 0000  
+   Or create a new account through mysql statment in database. 
+3. Click on the product button on the upper left hand corner and the user will see a drop down menu. Click on "product". Interface will then display a list of all products and their corresponding categories. To add an item, a user should enter related product information and then click Insert. (Please make sure that the product number is not a duplicate of any other existing product numbers). A user can delete and update products in a similar manner. 
+4. To enter purchase records, click Home Manager from the menu bar and select Fee Manager from the drop down menu. Now, a user should see a list of all personal expense records that the user has entered; empty panel if the user has not entered any records before. To create an expense record, first, enter all the related information, then click on Insert, the record will be added to the user account. A user can delete and update his/her expense history in a similar manner. 
+5. Finally, to exit the system, a user can either click on the red cross on the upper right corner or click on Product from menu bar and select exit from there.
