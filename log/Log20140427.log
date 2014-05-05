@@ -1,0 +1,1 @@
+2014-04-27 11:11:18 - com.JDSoftUtil.db.ConnectionPool.<init>(ConnectionPool.java:61) - ConnectionPool created:HMDB,jdbc:mysql://localhost:3306/homeManagerDB?autoReconnect=true
