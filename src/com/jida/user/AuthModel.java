@@ -1,5 +1,7 @@
 ﻿package com.jida.user;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.Connection;
 
 
@@ -154,6 +156,62 @@ public class AuthModel {
 			//this.users.add(user);
 			modelUser.get(user);
 			System.out.println("AuthModel:isUserValid2:"+user);
+			//--------------------------------export to csv-------------------------------
+			String dir = System.getProperty("user.dir") + "\\Expenses.csv"; //get the current working directory
+			try
+			{
+				FileWriter writer = new FileWriter(dir);
+				String qqq = "select * from product";
+				String fff = "select * from Fee";
+				Statement ststst = conn.createStatement();
+				Statement sss = conn.createStatement();
+				ResultSet rsrsrs = ststst.executeQuery(qqq);
+				ResultSet rfrfrf = sss.executeQuery(fff);
+				writer.append("Products:");
+				writer.append('\n');
+				while (rsrsrs.next())
+				{
+					writer.append(rsrsrs.getString(1));
+					writer.append(',');
+					writer.append(rsrsrs.getString(2));
+					writer.append(',');
+					writer.append(rsrsrs.getString(3));
+					writer.append(',');
+					writer.append(rsrsrs.getString(4));
+					writer.append('\n');
+				}
+				
+				writer.append('\n');
+				writer.append("Fees:");
+				writer.append('\n');
+				while (rfrfrf.next())
+				{
+					writer.append(rfrfrf.getString(1));
+					writer.append(',');
+					writer.append(rfrfrf.getString(2));
+					writer.append(',');
+					writer.append(rfrfrf.getString(3));
+					writer.append(',');
+					writer.append(rfrfrf.getString(4));
+					writer.append(',');
+					writer.append(rfrfrf.getString(5));
+					writer.append(',');
+					writer.append(rfrfrf.getString(6));
+					writer.append(',');
+					writer.append(rfrfrf.getString(7));
+					writer.append(',');
+					writer.append(rfrfrf.getString(8));
+					writer.append('\n');
+				}
+				writer.flush();
+				writer.close();
+			
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			} 
+			//----------------------------------------------------------------------------
 //			if(user.getType()==AuthSession.SERVER && (user.hasPrivilege("ServerOp")))
 //				return true;
 			//New 20130201
