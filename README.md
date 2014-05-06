@@ -4,7 +4,7 @@ This is a personal expense management system that aims to help users better keep
 
 Before running the system, a user will need to set up a database by executing mysql statements in “homeManager.sql” located under the db folder. Our team used MySQL as the database management system. A complete list of program parameters can be found in the file "mvc.ini". 
 
-A csv file named “Expenses.csv" will be generated every time that a user has successfully logged in. The file contains a list of merchandise and all past spending records for that particular user. 
+A csv file named “Expenses.csv" will be generated every time that a user has successfully logged in. The file contains a list of products and all past spending records for that particular user. 
 
 Below, we provide some instructions on using this system:
 
