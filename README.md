@@ -4,13 +4,11 @@ This is a personal expense management system that helps users better keep track 
 
 Before running the system, users need to set up a database by executing mysql statements in homeManager.sql located under db folder. Our team used MySQL as the database management system. A complete list of program parameters can be found in file: mvc.ini. 
 
-Program entrance is located at src/com/jida/clinet/main/ProgramEntrance.
+A csv file with name "Expenses.csv" will be generated everytime a user has succesfully logged in, which contains the list of products and all the past spending records for that particular user. 
 
-A csv file with name "Expenses.csv" will be generated everytime a user has succesfully logged in, it will contain the list of products and all the past purchase records for that particular user. 
+Below, we provide some instructions on using this system:
 
-Below we provide some instructions on using this system:
-
-1. Use the program entrance located at src/com/jida/clinet/main/ProgramEntrance
+1. Program entrance is located at src/com/jida/client/main/ProgramEntrance
 2. Use the following user account to login:   
       username: Andi  
       password: 0000  
