@@ -12,7 +12,7 @@ Below, we provide some instructions on using this system:
 2. Use the following user account to login:   
       username: Andi  
       password: 0000  
-   Or create a new account through mysql statement in database. 
+   Or create a new user account through mysql statement in database. 
 3. After logged in, click on "Product" from menu bar and select "Product" from the dropdown menu. The user interface will then display a list of all products, entered by the user and their corresponding categories. To add an item, a user needs to enter any related product information and then click "Insert". (Please make sure that the product number is not a duplicate of any other existing product numbers). A user can delete or update products in a similar manner. 
 4. To create an expense record, click on "Home Manager" from menu bar and select "Fee Manager" from the dropdown menu. Enter any related information about the spending, and then click "Insert". A record will be added to the user account. A list of all personal expense records that the user has entered will be displayed in the panel below; an empty panel indicates that the user has not yet entered any records. Click on "Refresh" if needed. A user can delete or update his/her expense history in a similar manner. 
 5. Finally, to exit the system, a user can either click on the red cross exit button or click on "Product" from menu bar and select "exit" from there.
