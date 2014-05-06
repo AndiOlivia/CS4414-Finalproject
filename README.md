@@ -1,8 +1,8 @@
 Personal Expense Management System
 ===================
-This is a personal expense management system that helps users better keep track of their large number of daily expenses. This system provides users with a straightforward and user-friendly interface. It also allows users to keep track of their personal expenses without the need of sharing important financial information with parties that they do not trust. Besides, this system enables the users to export their past expense history into a well-formatted csv file that allows them to access their expense records anywhere and anytime without the need for an internet connection.  
+This is a personal expense management system that helps users better keep track of their large number of daily expenses. This system provides users with a straightforward and user-friendly interface. It also allows users to keep track of their personal spending without the need of sharing important financial information with parties that they do not trust. Besides, this system enables the users to export their expense history into a well-formatted csv file that allows them to access their expense records anywhere and anytime without the need for an internet connection.  
 
-Before executing this program, the user needs to set up the database by executing mysql statements in homeManager.sql under db folder. Our team used MySQL as the database management system. A complete list of program parameters can be found in file: mvc.ini. 
+Before running the system, users need to set up a database by executing mysql statements in homeManager.sql located under db folder. Our team used MySQL as the database management system. A complete list of program parameters can be found in file: mvc.ini. 
 
 Program entrance is located at src/com/jida/clinet/main/ProgramEntrance.
 
